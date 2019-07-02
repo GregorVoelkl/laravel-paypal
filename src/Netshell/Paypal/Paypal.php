@@ -37,7 +37,7 @@ class Paypal{
 
 
     /**
-     * @return Paypal\Api\Address
+     * @return \Paypal\Api\Address
      */
     public function address()
     {
@@ -45,7 +45,7 @@ class Paypal{
     }
 
     /**
-     * @return Paypal\Api\Amount
+     * @return \Paypal\Api\Amount
      */
     public function amount()
     {
@@ -53,7 +53,7 @@ class Paypal{
     }
 
     /**
-     * @return Paypal\Api\Details
+     * @return \Paypal\Api\Details
      */
     public  function details()
     {
@@ -61,7 +61,7 @@ class Paypal{
     }
 
     /**
-     * @return Paypal\Api\Authorization
+     * @return \Paypal\Api\Authorization
      */
     public  function authorization()
     {
@@ -69,7 +69,7 @@ class Paypal{
     }
 
     /**
-     * @return Paypal\Api\Capture
+     * @return \Paypal\Api\Capture
      */
     public  function capture()
     {
@@ -77,7 +77,7 @@ class Paypal{
     }
 
     /**
-     * @return Paypal\Api\CreditCard
+     * @return \Paypal\Api\CreditCard
      */
     public  function creditCard()
     {
@@ -85,7 +85,7 @@ class Paypal{
     }
 
     /**
-     * @return Paypal\Api\CreditCardToken
+     * @return \Paypal\Api\CreditCardToken
      */
     public  function creditCardToken()
     {
@@ -93,28 +93,28 @@ class Paypal{
     }
 
     /**
-     * @return Paypal\Api\FundingInstrument
+     * @return \Paypal\Api\FundingInstrument
      */
     public  function fundingInstrument()
     {
         return new FundingInstrument;
     }
 	 /**
-     * @return Paypal\Api\FlowConfig
+     * @return \Paypal\Api\FlowConfig
      */
 	public  function FlowConfig()
     {
         return new FlowConfig;
     }
 	 /**
-     * @return Paypal\Api\Presentation
+     * @return \Paypal\Api\Presentation
      */
 	public  function Presentation()
     {
         return new Presentation;
     }
     /**
-     * @return Paypal\Api\Item
+     * @return \Paypal\Api\Item
      */
     public  function item()
     {
@@ -122,7 +122,7 @@ class Paypal{
     }
 
     /**
-     * @return Paypal\Api\ItemList
+     * @return \Paypal\Api\ItemList
      */
     public  function itemList()
     {
@@ -130,7 +130,7 @@ class Paypal{
     }
 
     /**
-     * @return Paypal\Api\InputFields
+     * @return \Paypal\Api\InputFields
      */
     public  function inputFields()
     {
@@ -138,7 +138,7 @@ class Paypal{
     }
 
     /**
-     * @return Paypal\Api\Links
+     * @return \Paypal\Api\Links
      */
     public  function links()
     {
@@ -146,7 +146,7 @@ class Paypal{
     }
 
     /**
-     * @return Paypal\Api\Payee
+     * @return \Paypal\Api\Payee
      */
     public  function payee()
     {
@@ -154,7 +154,7 @@ class Paypal{
     }
 
     /**
-     * @return Paypal\Api\Payer
+     * @return \Paypal\Api\Payer
      */
     public  function payer()
     {
@@ -162,7 +162,7 @@ class Paypal{
     }
 
     /**
-     * @return Paypal\Api\PayerInfo
+     * @return \Paypal\Api\PayerInfo
      */
     public  function payerInfo()
     {
@@ -170,7 +170,7 @@ class Paypal{
     }
 
     /**
-     * @return Paypal\Api\Payment
+     * @return \Paypal\Api\Payment
      */
     public  function payment()
     {
@@ -178,7 +178,7 @@ class Paypal{
     }
 
     /**
-     * @return Paypal\Api\PaymentExecution
+     * @return \Paypal\Api\PaymentExecution
      */
     public  function paymentExecution()
     {
@@ -186,7 +186,7 @@ class Paypal{
     }
 
     /**
-     * @return Paypal\Api\PaymentHistory
+     * @return \Paypal\Api\PaymentHistory
      */
     public  function paymentHistory()
     {
@@ -194,7 +194,7 @@ class Paypal{
     }
 
     /**
-     * @return Paypal\Api\RedirectUrls
+     * @return \Paypal\Api\RedirectUrls
      */
     public  function redirectUrls()
     {
@@ -202,7 +202,7 @@ class Paypal{
     }
 
     /**
-     * @return Paypal\Api\Refund
+     * @return \Paypal\Api\Refund
      */
     public  function refund()
     {
@@ -210,7 +210,7 @@ class Paypal{
     }
 
     /**
-     * @return Paypal\Api\RelatedResources
+     * @return \Paypal\Api\RelatedResources
      */
     public  function relatedResources()
     {
@@ -218,7 +218,7 @@ class Paypal{
     }
 
     /**
-     * @return Paypal\Api\Sale
+     * @return \Paypal\Api\Sale
      */
     public  function sale()
     {
@@ -226,7 +226,7 @@ class Paypal{
     }
 
     /**
-     * @return Paypal\Api\ShippingAddress
+     * @return \Paypal\Api\ShippingAddress
      */
     public  function shippingAddress()
     {
@@ -234,7 +234,7 @@ class Paypal{
     }
 
     /**
-     * @return Paypal\Api\Transactions
+     * @return \Paypal\Api\Transactions
      */
     public  function transactions()
     {
@@ -242,7 +242,7 @@ class Paypal{
     }
 
     /**
-     * @return Paypal\Api\Transaction
+     * @return \Paypal\Api\Transaction
      */
     public function transaction()
     {
@@ -250,7 +250,7 @@ class Paypal{
     }
 
     /**
-     * @return Paypal\Api\WebProfile
+     * @return \Paypal\Api\WebProfile
      */
     public function webProfile()
     {
@@ -261,7 +261,7 @@ class Paypal{
      * @param null $clientId
      * @param null $clientSecret
      * @param null $requestId
-     * @return Paypal\Rest\ApiContext
+     * @return \Paypal\Rest\ApiContext
      */
     public function apiContext($clientId = null, $clientSecret = null, $requestId = null)
     {
@@ -273,7 +273,7 @@ class Paypal{
     /**
      * @param null $ClientId
      * @param null $ClientSecret
-     * @return PayPal/Auth/OAuthTokenCredential
+     * @return OAuthTokenCredential
      */
     public  static function OAuthTokenCredential($ClientId = null, $ClientSecret=null)
     {
@@ -312,7 +312,7 @@ class Paypal{
      * grape payment details using the paymentId
      * @param $paymentId
      * @param null $apiContext
-     * @return Paypal\Api\Payment
+     * @return \Paypal\Api\Payment
      */
     public static function getById($paymentId, $apiContext = null)
     {
@@ -326,7 +326,7 @@ class Paypal{
      * grape all payment details
      * @param $param
      * @param null $apiContext
-     * @return Paypal\Api\Payment
+     * @return \Paypal\Api\PaymentHistory
      */
     public static function getAll($param, $apiContext = null)
     {
